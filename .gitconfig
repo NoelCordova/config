@@ -1,0 +1,13 @@
+[user]
+  name  = Edgar Noel Espino Córdova
+  email = eespino@grainchain.io
+
+[core]
+  editor = nvim
+
+[feth]
+  prune = true
+
+[init]
+  defaultBranch = main
+
