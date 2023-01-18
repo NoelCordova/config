@@ -1,14 +1,20 @@
 [user]
-  name  = Noel Espino Córdova
-  email = github@ednoesco.com
-  signingkey = 28CEAA1B67704969
+  name  = Noel Espino
+  email = eespino@webdoxclm.com
+  signingkey = 126E17C7280F0747
 
 [core]
   editor = nvim
 
-[fetch]
-  prune = true
-
 [init]
   defaultBranch = main
 
+[pull]
+  ff = true
+  rebase = true
+
+[fetch]
+  prune = true
+
+[log]
+  abbrevCommit = true
