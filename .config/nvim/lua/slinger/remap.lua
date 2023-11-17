@@ -1,4 +1,5 @@
 vim.keymap.set("n", "<Leader>ex", "<Cmd>Ex<Cr>") -- Explorer
+vim.keymap.set("n", "<Leader>n", "<Cmd>noh<Cr>") -- Stop searching text
 
 -- Buffer
 vim.keymap.set("n", "<Tab>", ":bnext<Cr>")  -- Navigation next

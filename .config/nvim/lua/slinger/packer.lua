@@ -3,7 +3,6 @@
 return require('packer').startup(function(use)
   -- Packer can manage itself
   use "wbthomason/packer.nvim"
-  use "folke/tokyonight.nvim"
   use "windwp/nvim-autopairs"
   use "f-person/git-blame.nvim"
   use "lewis6991/gitsigns.nvim"
@@ -11,12 +10,13 @@ return require('packer').startup(function(use)
   use { "nvim-treesitter/nvim-treesitter", run = "TSUpdate" }
   use {
     "nvim-lualine/lualine.nvim",
-    requires = { "kyazdani42/nvim-web-devicons", opt = true }
+    -- requires = { "kyazdani42/nvim-web-devicons", opt = true }
   }
   use {
     "nvim-telescope/telescope.nvim", branch = "0.1.x",
     requires = { { "nvim-lua/plenary.nvim" } }
   }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use {
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v1.x',
