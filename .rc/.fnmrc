@@ -1,0 +1,6 @@
+if command -v fnm; then
+  eval "$(fnm env --use-on-cd)"
+  echo "YES"
+else
+  echo "fnm is not installed"
+fi

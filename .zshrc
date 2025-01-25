@@ -15,9 +15,10 @@ export PATH=$PATH
 export PATH=$PATH:/opt/homebrew/opt/gnupg@2.2/bin
 
 # Load aditional (optional) configuration files
-[ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
 [ -s $DOTFILES/.rc/.bunrc ] && source $DOTFILES/.rc/.bunrc
+[ -s $DOTFILES/.rc/.fnmrc ] && source $DOTFILES/.rc/.fnmrc
 [ -s $DOTFILES/.rc/.gorc ] && source $DOTFILES/.rc/.gorc
+[ -s $DOTFILES/.rc/.vulkanrc ] && source $DOTFILES/.rc/.vulkanrc
 
 # Personal aliases
 alias vim="nvim"
@@ -41,9 +42,6 @@ alias logo="git log --oneline"
 
 # npm aliases
 alias npml="npm list -g --depth=0"
-
-# fnm
-eval "$(fnm env --use-on-cd)"
 
 # Set starship as shell
 eval "$(starship init zsh)"
